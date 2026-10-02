@@ -22,13 +22,35 @@ This tool performs arithmetic on the numbers you enter. It is not financial, tax
 
 Everything runs in your browser. Nothing you type is sent anywhere, stored, or saved. Closing the tab clears it.
 
-## Use it
+## Use
 
 Open `index.html` in any modern browser, or host it as a static page. No build step, no dependencies, no network calls.
+
+1. Enter a starting amount and a monthly add.
+2. Enter an annual rate and a number of years.
+3. Read the ending balance, total contributed, and growth. Results update as you type.
+4. Check the chart to see how much of the balance is your contributions and how much is growth.
+
+## Why this exists
+
+Seeing how monthly contributions compound should not require handing your numbers to a finance site that tracks you. This is one HTML file that does the arithmetic in your browser, with no tracking, released under the MIT license.
 
 ## More
 
 Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/compound-interest-visualizer
+cd compound-interest-visualizer
+```
+
+Open `index.html` in a browser, or serve the folder with `python -m http.server 8000` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` file with inline CSS and JavaScript.
 
 ## Third-party notices
 
